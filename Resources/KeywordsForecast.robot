@@ -9,6 +9,7 @@ Select Search Text Box
 
 Enter Search Term
     [arguments]  ${searchterm}
+    Wait Until Page Contains Element    ${HPSearchTextBox}
     input text  ${HPSearchTextBox}  ${searchterm}
 
 Click Search
@@ -30,7 +31,6 @@ Validate 7 days of forecast
     click element   ${FPDay7}
 
 FAIL Validate 7 days of forecast
-    click element   ${FPToday}
     click element   ${FPDay2}
     click element   ${FPDay3}
     click element   ${FPDay4}
@@ -49,4 +49,14 @@ Check for beach forecast
     Element Should Contain   ${FPTideForecast}      Tide
 
 Check for NO beach forecast
+    Wait Until Page Contains Element    ${FPRegionalForecast}
     Page Should Not Contain     Beach forecast and tide times
+
+browser is opened to homepage
+    Wait Until Page Contains Element    ${HPSearchTextBox}
+    click element   ${HPSearchTextBox}
+
+user searches for the place named "${placename}"
+    Wait Until Page Contains Element    ${HPSearchTextBox}
+    input text  ${HPSearchTextBox}  ${placename}
+    click element   ${HPSearchButton}
