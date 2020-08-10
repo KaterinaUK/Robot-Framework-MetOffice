@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200810 13:46:20.582" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200810 16:20:47.061" rpa="false">
 <suite id="s1" name="Metofficetestsuite" source="C:\Users\Dale\PycharmProjects\MetOffice\Robot-Framework-MetOffice\TestCases\metofficetestsuite.robot">
 <test id="s1-t1" name="TC1: I can find the forecast for Jacobs Ladder beach in Sidmouth and be taken to the appropriate forecast page">
 <kw name="Start TestCase" library="Common" type="setup">
@@ -9,22 +9,22 @@
 <arg>https://www.metoffice.gov.uk/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200810 13:46:20.843" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
-<status status="PASS" starttime="20200810 13:46:20.842" endtime="20200810 13:46:26.310"></status>
+<msg timestamp="20200810 16:20:47.339" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
+<status status="PASS" starttime="20200810 16:20:47.339" endtime="20200810 16:20:53.978"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200810 13:46:26.311" endtime="20200810 13:46:28.532"></status>
+<status status="PASS" starttime="20200810 16:20:53.978" endtime="20200810 16:20:56.349"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${HPCookiesDisclaimerBtn}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:28.535" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20200810 13:46:28.533" endtime="20200810 13:46:28.910"></status>
+<msg timestamp="20200810 16:20:56.350" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20200810 16:20:56.349" endtime="20200810 16:20:56.914"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:20.842" endtime="20200810 13:46:28.910"></status>
+<status status="PASS" starttime="20200810 16:20:47.339" endtime="20200810 16:20:56.914"></status>
 </kw>
 <kw name="Select Search Text Box" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -32,10 +32,10 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:28.912" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:46:28.912" endtime="20200810 13:46:29.356"></status>
+<msg timestamp="20200810 16:20:56.920" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:20:56.919" endtime="20200810 16:20:57.480"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:28.911" endtime="20200810 13:46:29.356"></status>
+<status status="PASS" starttime="20200810 16:20:56.918" endtime="20200810 16:20:57.480"></status>
 </kw>
 <kw name="Enter Search Term" library="KeywordsForecast">
 <arguments>
@@ -46,7 +46,7 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<status status="PASS" starttime="20200810 13:46:29.358" endtime="20200810 13:46:29.378"></status>
+<status status="PASS" starttime="20200810 16:20:57.483" endtime="20200810 16:20:57.621"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -54,10 +54,10 @@
 <arg>${HPSearchTextBox}</arg>
 <arg>${searchterm}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:29.379" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:46:29.378" endtime="20200810 13:46:29.539"></status>
+<msg timestamp="20200810 16:20:57.625" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:20:57.622" endtime="20200810 16:20:57.857"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:29.357" endtime="20200810 13:46:29.539"></status>
+<status status="PASS" starttime="20200810 16:20:57.482" endtime="20200810 16:20:57.857"></status>
 </kw>
 <kw name="Click Search" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -65,41 +65,48 @@
 <arguments>
 <arg>${HPSearchButton}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:29.541" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
-<status status="PASS" starttime="20200810 13:46:29.541" endtime="20200810 13:46:30.947"></status>
+<msg timestamp="20200810 16:20:57.861" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
+<status status="PASS" starttime="20200810 16:20:57.860" endtime="20200810 16:21:09.269"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:29.540" endtime="20200810 13:46:30.948"></status>
+<status status="PASS" starttime="20200810 16:20:57.859" endtime="20200810 16:21:09.270"></status>
 </kw>
 <kw name="Forecast Page Should Be Open" library="KeywordsForecast">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${FPRegionalForecast}</arg>
+</arguments>
+<status status="PASS" starttime="20200810 16:21:09.271" endtime="20200810 16:21:09.307"></status>
+</kw>
 <kw name="Location Should Contain" library="SeleniumLibrary">
 <doc>Verifies that the current URL contains ``expected``.</doc>
 <arguments>
 <arg>https://www.metoffice.gov.uk/weather/forecast/gcj8q101t</arg>
 </arguments>
-<msg timestamp="20200810 13:46:31.029" level="INFO">Current location contains 'https://www.metoffice.gov.uk/weather/forecast/gcj8q101t'.</msg>
-<status status="PASS" starttime="20200810 13:46:30.949" endtime="20200810 13:46:31.029"></status>
+<msg timestamp="20200810 16:21:09.321" level="INFO">Current location contains 'https://www.metoffice.gov.uk/weather/forecast/gcj8q101t'.</msg>
+<status status="PASS" starttime="20200810 16:21:09.307" endtime="20200810 16:21:09.321"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that the current page title equals ``title``.</doc>
 <arguments>
 <arg>Sidmouth - Jacobs Ladder (Beach) (Devon) weather - Met Office</arg>
 </arguments>
-<msg timestamp="20200810 13:46:31.139" level="INFO">Page title is 'Sidmouth - Jacobs Ladder (Beach) (Devon) weather - Met Office'.</msg>
-<status status="PASS" starttime="20200810 13:46:31.029" endtime="20200810 13:46:31.139"></status>
+<msg timestamp="20200810 16:21:09.330" level="INFO">Page title is 'Sidmouth - Jacobs Ladder (Beach) (Devon) weather - Met Office'.</msg>
+<status status="PASS" starttime="20200810 16:21:09.322" endtime="20200810 16:21:09.330"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:30.948" endtime="20200810 13:46:31.139"></status>
+<status status="PASS" starttime="20200810 16:21:09.270" endtime="20200810 16:21:09.330"></status>
 </kw>
 <kw name="Finish TestCase" library="KeywordsForecast" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200810 13:46:31.141" endtime="20200810 13:46:33.738"></status>
+<status status="PASS" starttime="20200810 16:21:09.332" endtime="20200810 16:21:12.017"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:31.140" endtime="20200810 13:46:33.738"></status>
+<status status="PASS" starttime="20200810 16:21:09.331" endtime="20200810 16:21:12.017"></status>
 </kw>
 <tags>
 <tag>Functional Tests - Forecast</tag>
 </tags>
-<status status="PASS" starttime="20200810 13:46:20.840" endtime="20200810 13:46:33.739" critical="yes"></status>
+<status status="PASS" starttime="20200810 16:20:47.338" endtime="20200810 16:21:12.018" critical="yes"></status>
 </test>
 <test id="s1-t2" name="TC2: 7 days of forecasts should be shown on the forecast page">
 <kw name="Start TestCase" library="Common" type="setup">
@@ -109,22 +116,22 @@
 <arg>https://www.metoffice.gov.uk/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200810 13:46:33.742" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
-<status status="PASS" starttime="20200810 13:46:33.742" endtime="20200810 13:46:39.091"></status>
+<msg timestamp="20200810 16:21:12.021" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
+<status status="PASS" starttime="20200810 16:21:12.021" endtime="20200810 16:21:18.393"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200810 13:46:39.092" endtime="20200810 13:46:41.276"></status>
+<status status="PASS" starttime="20200810 16:21:18.393" endtime="20200810 16:21:20.646"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${HPCookiesDisclaimerBtn}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:41.277" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20200810 13:46:41.277" endtime="20200810 13:46:41.540"></status>
+<msg timestamp="20200810 16:21:20.650" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20200810 16:21:20.648" endtime="20200810 16:21:21.201"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:33.742" endtime="20200810 13:46:41.540"></status>
+<status status="PASS" starttime="20200810 16:21:12.020" endtime="20200810 16:21:21.201"></status>
 </kw>
 <kw name="Select Search Text Box" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -132,10 +139,10 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:41.541" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:46:41.541" endtime="20200810 13:46:41.949"></status>
+<msg timestamp="20200810 16:21:21.208" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:21:21.207" endtime="20200810 16:21:21.600"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:41.540" endtime="20200810 13:46:41.949"></status>
+<status status="PASS" starttime="20200810 16:21:21.203" endtime="20200810 16:21:21.601"></status>
 </kw>
 <kw name="Enter Search Term" library="KeywordsForecast">
 <arguments>
@@ -146,7 +153,7 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<status status="PASS" starttime="20200810 13:46:41.951" endtime="20200810 13:46:41.964"></status>
+<status status="PASS" starttime="20200810 16:21:21.602" endtime="20200810 16:21:21.631"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -154,10 +161,10 @@
 <arg>${HPSearchTextBox}</arg>
 <arg>${searchterm}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:41.965" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:46:41.964" endtime="20200810 13:46:42.126"></status>
+<msg timestamp="20200810 16:21:21.634" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:21:21.632" endtime="20200810 16:21:21.993"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:41.950" endtime="20200810 13:46:42.126"></status>
+<status status="PASS" starttime="20200810 16:21:21.601" endtime="20200810 16:21:21.993"></status>
 </kw>
 <kw name="Click Search" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -165,10 +172,10 @@
 <arguments>
 <arg>${HPSearchButton}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:42.128" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
-<status status="PASS" starttime="20200810 13:46:42.128" endtime="20200810 13:46:43.220"></status>
+<msg timestamp="20200810 16:21:21.995" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
+<status status="PASS" starttime="20200810 16:21:21.995" endtime="20200810 16:21:23.812"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:42.127" endtime="20200810 13:46:43.220"></status>
+<status status="PASS" starttime="20200810 16:21:21.994" endtime="20200810 16:21:23.812"></status>
 </kw>
 <kw name="Validate 7 days of forecast" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -176,62 +183,62 @@
 <arguments>
 <arg>${FPDay2}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:43.221" level="INFO">Clicking element 'xpath://li[@id='tabDay1']//a[1]'.</msg>
-<status status="PASS" starttime="20200810 13:46:43.221" endtime="20200810 13:46:43.814"></status>
+<msg timestamp="20200810 16:21:23.818" level="INFO">Clicking element 'xpath://li[@id='tabDay1']//a[1]'.</msg>
+<status status="PASS" starttime="20200810 16:21:23.816" endtime="20200810 16:21:24.820"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FPDay3}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:43.815" level="INFO">Clicking element 'xpath://li[@id='tabDay2']//a[1]'.</msg>
-<status status="PASS" starttime="20200810 13:46:43.814" endtime="20200810 13:46:44.599"></status>
+<msg timestamp="20200810 16:21:24.821" level="INFO">Clicking element 'xpath://li[@id='tabDay2']//a[1]'.</msg>
+<status status="PASS" starttime="20200810 16:21:24.821" endtime="20200810 16:21:26.882"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FPDay4}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:44.600" level="INFO">Clicking element 'xpath://li[@id='tabDay3']//a[1]'.</msg>
-<status status="PASS" starttime="20200810 13:46:44.599" endtime="20200810 13:46:45.860"></status>
+<msg timestamp="20200810 16:21:26.883" level="INFO">Clicking element 'xpath://li[@id='tabDay3']//a[1]'.</msg>
+<status status="PASS" starttime="20200810 16:21:26.882" endtime="20200810 16:21:27.167"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FPDay5}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:45.861" level="INFO">Clicking element 'xpath://li[@id='tabDay4']//a[1]'.</msg>
-<status status="PASS" starttime="20200810 13:46:45.860" endtime="20200810 13:46:46.123"></status>
+<msg timestamp="20200810 16:21:27.168" level="INFO">Clicking element 'xpath://li[@id='tabDay4']//a[1]'.</msg>
+<status status="PASS" starttime="20200810 16:21:27.167" endtime="20200810 16:21:30.887"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FPDay6}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:46.124" level="INFO">Clicking element 'xpath://li[@id='tabDay5']//a[1]'.</msg>
-<status status="PASS" starttime="20200810 13:46:46.123" endtime="20200810 13:46:46.415"></status>
+<msg timestamp="20200810 16:21:30.890" level="INFO">Clicking element 'xpath://li[@id='tabDay5']//a[1]'.</msg>
+<status status="PASS" starttime="20200810 16:21:30.888" endtime="20200810 16:21:31.633"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FPDay7}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:46.416" level="INFO">Clicking element 'xpath://li[@id='tabDay6']//a[1]'.</msg>
-<status status="PASS" starttime="20200810 13:46:46.415" endtime="20200810 13:46:46.539"></status>
+<msg timestamp="20200810 16:21:31.634" level="INFO">Clicking element 'xpath://li[@id='tabDay6']//a[1]'.</msg>
+<status status="PASS" starttime="20200810 16:21:31.634" endtime="20200810 16:21:32.048"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:43.220" endtime="20200810 13:46:46.539"></status>
+<status status="PASS" starttime="20200810 16:21:23.815" endtime="20200810 16:21:32.048"></status>
 </kw>
 <kw name="Finish TestCase" library="KeywordsForecast" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200810 13:46:46.545" endtime="20200810 13:46:50.165"></status>
+<status status="PASS" starttime="20200810 16:21:32.051" endtime="20200810 16:21:34.785"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:46.543" endtime="20200810 13:46:50.165"></status>
+<status status="PASS" starttime="20200810 16:21:32.051" endtime="20200810 16:21:34.785"></status>
 </kw>
 <tags>
 <tag>Functional Tests - Forecast</tag>
 </tags>
-<status status="PASS" starttime="20200810 13:46:33.740" endtime="20200810 13:46:50.166" critical="yes"></status>
+<status status="PASS" starttime="20200810 16:21:12.019" endtime="20200810 16:21:34.786" critical="yes"></status>
 </test>
 <test id="s1-t3" name="TC3: There should be a forecast for South West England on the forecast page">
 <kw name="Start TestCase" library="Common" type="setup">
@@ -241,22 +248,22 @@
 <arg>https://www.metoffice.gov.uk/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200810 13:46:50.169" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
-<status status="PASS" starttime="20200810 13:46:50.169" endtime="20200810 13:46:55.035"></status>
+<msg timestamp="20200810 16:21:34.788" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
+<status status="PASS" starttime="20200810 16:21:34.788" endtime="20200810 16:21:41.820"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200810 13:46:55.035" endtime="20200810 13:46:57.224"></status>
+<status status="PASS" starttime="20200810 16:21:41.821" endtime="20200810 16:21:44.395"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${HPCookiesDisclaimerBtn}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:57.225" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20200810 13:46:57.224" endtime="20200810 13:46:57.529"></status>
+<msg timestamp="20200810 16:21:44.396" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20200810 16:21:44.395" endtime="20200810 16:21:45.020"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:50.169" endtime="20200810 13:46:57.530"></status>
+<status status="PASS" starttime="20200810 16:21:34.788" endtime="20200810 16:21:45.020"></status>
 </kw>
 <kw name="Select Search Text Box" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -264,10 +271,10 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:57.535" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:46:57.534" endtime="20200810 13:46:57.936"></status>
+<msg timestamp="20200810 16:21:45.022" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:21:45.022" endtime="20200810 16:21:45.495"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:57.532" endtime="20200810 13:46:57.936"></status>
+<status status="PASS" starttime="20200810 16:21:45.021" endtime="20200810 16:21:45.495"></status>
 </kw>
 <kw name="Enter Search Term" library="KeywordsForecast">
 <arguments>
@@ -278,7 +285,7 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<status status="PASS" starttime="20200810 13:46:57.938" endtime="20200810 13:46:57.956"></status>
+<status status="PASS" starttime="20200810 16:21:45.520" endtime="20200810 16:21:45.614"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -286,10 +293,10 @@
 <arg>${HPSearchTextBox}</arg>
 <arg>${searchterm}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:57.957" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:46:57.957" endtime="20200810 13:46:58.193"></status>
+<msg timestamp="20200810 16:21:45.615" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:21:45.614" endtime="20200810 16:21:45.947"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:57.937" endtime="20200810 13:46:58.193"></status>
+<status status="PASS" starttime="20200810 16:21:45.519" endtime="20200810 16:21:45.947"></status>
 </kw>
 <kw name="Click Search" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -297,10 +304,10 @@
 <arguments>
 <arg>${HPSearchButton}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:58.195" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
-<status status="PASS" starttime="20200810 13:46:58.195" endtime="20200810 13:46:59.528"></status>
+<msg timestamp="20200810 16:21:45.949" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
+<status status="PASS" starttime="20200810 16:21:45.949" endtime="20200810 16:21:47.679"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:58.194" endtime="20200810 13:46:59.528"></status>
+<status status="PASS" starttime="20200810 16:21:45.948" endtime="20200810 16:21:47.680"></status>
 </kw>
 <kw name="Check for regional forecast" library="KeywordsForecast">
 <arguments>
@@ -312,22 +319,22 @@
 <arg>${FPRegionalForecast}</arg>
 <arg>${region}</arg>
 </arguments>
-<msg timestamp="20200810 13:46:59.724" level="INFO">Element 'xpath://*[@id='five-day-forecast']' contains text 'South West England'.</msg>
-<status status="PASS" starttime="20200810 13:46:59.532" endtime="20200810 13:46:59.724"></status>
+<msg timestamp="20200810 16:21:47.909" level="INFO">Element 'xpath://*[@id='five-day-forecast']' contains text 'South West England'.</msg>
+<status status="PASS" starttime="20200810 16:21:47.682" endtime="20200810 16:21:47.910"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:59.531" endtime="20200810 13:46:59.724"></status>
+<status status="PASS" starttime="20200810 16:21:47.681" endtime="20200810 16:21:47.910"></status>
 </kw>
 <kw name="Finish TestCase" library="KeywordsForecast" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200810 13:46:59.726" endtime="20200810 13:47:02.085"></status>
+<status status="PASS" starttime="20200810 16:21:47.917" endtime="20200810 16:21:50.655"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:46:59.725" endtime="20200810 13:47:02.085"></status>
+<status status="PASS" starttime="20200810 16:21:47.916" endtime="20200810 16:21:50.655"></status>
 </kw>
 <tags>
 <tag>Functional Tests - Forecast</tag>
 </tags>
-<status status="PASS" starttime="20200810 13:46:50.167" endtime="20200810 13:47:02.086" critical="yes"></status>
+<status status="PASS" starttime="20200810 16:21:34.787" endtime="20200810 16:21:50.656" critical="yes"></status>
 </test>
 <test id="s1-t4" name="TC4: There should be a beach forecast available for Jacobs Ladder">
 <kw name="Start TestCase" library="Common" type="setup">
@@ -337,22 +344,22 @@
 <arg>https://www.metoffice.gov.uk/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200810 13:47:02.088" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
-<status status="PASS" starttime="20200810 13:47:02.088" endtime="20200810 13:47:07.281"></status>
+<msg timestamp="20200810 16:21:50.659" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
+<status status="PASS" starttime="20200810 16:21:50.659" endtime="20200810 16:21:57.086"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200810 13:47:07.281" endtime="20200810 13:47:09.460"></status>
+<status status="PASS" starttime="20200810 16:21:57.087" endtime="20200810 16:21:59.433"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${HPCookiesDisclaimerBtn}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:09.461" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20200810 13:47:09.460" endtime="20200810 13:47:09.733"></status>
+<msg timestamp="20200810 16:21:59.440" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20200810 16:21:59.434" endtime="20200810 16:22:00.034"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:02.088" endtime="20200810 13:47:09.733"></status>
+<status status="PASS" starttime="20200810 16:21:50.658" endtime="20200810 16:22:00.036"></status>
 </kw>
 <kw name="Select Search Text Box" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -360,10 +367,10 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:09.735" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:47:09.735" endtime="20200810 13:47:10.146"></status>
+<msg timestamp="20200810 16:22:00.043" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:22:00.043" endtime="20200810 16:22:00.466"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:09.734" endtime="20200810 13:47:10.146"></status>
+<status status="PASS" starttime="20200810 16:22:00.042" endtime="20200810 16:22:00.466"></status>
 </kw>
 <kw name="Enter Search Term" library="KeywordsForecast">
 <arguments>
@@ -374,7 +381,7 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<status status="PASS" starttime="20200810 13:47:10.148" endtime="20200810 13:47:10.163"></status>
+<status status="PASS" starttime="20200810 16:22:00.475" endtime="20200810 16:22:00.525"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -382,10 +389,10 @@
 <arg>${HPSearchTextBox}</arg>
 <arg>${searchterm}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:10.164" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:47:10.163" endtime="20200810 13:47:10.329"></status>
+<msg timestamp="20200810 16:22:00.526" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:22:00.525" endtime="20200810 16:22:00.894"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:10.147" endtime="20200810 13:47:10.330"></status>
+<status status="PASS" starttime="20200810 16:22:00.474" endtime="20200810 16:22:00.895"></status>
 </kw>
 <kw name="Click Search" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -393,10 +400,10 @@
 <arguments>
 <arg>${HPSearchButton}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:10.331" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
-<status status="PASS" starttime="20200810 13:47:10.330" endtime="20200810 13:47:11.408"></status>
+<msg timestamp="20200810 16:22:00.908" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
+<status status="PASS" starttime="20200810 16:22:00.908" endtime="20200810 16:22:02.991"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:10.330" endtime="20200810 13:47:11.409"></status>
+<status status="PASS" starttime="20200810 16:22:00.907" endtime="20200810 16:22:02.992"></status>
 </kw>
 <kw name="Check for beach forecast" library="KeywordsForecast">
 <kw name="Element Should Contain" library="SeleniumLibrary">
@@ -405,8 +412,8 @@
 <arg>${FPBeachForecastHeader}</arg>
 <arg>Beach forecast and tide times</arg>
 </arguments>
-<msg timestamp="20200810 13:47:11.512" level="INFO">Element 'xpath://main[@id='content']/div[4]/div[1]/div[1]/div[1]/a[1]/div[1]/h2[1]' contains text 'Beach forecast and tide times'.</msg>
-<status status="PASS" starttime="20200810 13:47:11.411" endtime="20200810 13:47:11.512"></status>
+<msg timestamp="20200810 16:22:03.424" level="INFO">Element 'xpath://main[@id='content']/div[4]/div[1]/div[1]/div[1]/a[1]/div[1]/h2[1]' contains text 'Beach forecast and tide times'.</msg>
+<status status="PASS" starttime="20200810 16:22:03.008" endtime="20200810 16:22:03.424"></status>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
@@ -414,8 +421,8 @@
 <arg>${FPBeachForecastLocation}</arg>
 <arg>Sidmouth - Jacobs Ladder (Beach)</arg>
 </arguments>
-<msg timestamp="20200810 13:47:11.773" level="INFO">Element 'xpath://div[@class='detail']//h3' contains text 'Sidmouth - Jacobs Ladder (Beach)'.</msg>
-<status status="PASS" starttime="20200810 13:47:11.512" endtime="20200810 13:47:11.773"></status>
+<msg timestamp="20200810 16:22:03.686" level="INFO">Element 'xpath://div[@class='detail']//h3' contains text 'Sidmouth - Jacobs Ladder (Beach)'.</msg>
+<status status="PASS" starttime="20200810 16:22:03.425" endtime="20200810 16:22:03.687"></status>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
@@ -423,8 +430,8 @@
 <arg>${FPWindForecast}</arg>
 <arg>Wind</arg>
 </arguments>
-<msg timestamp="20200810 13:47:11.998" level="INFO">Element 'css:div.grid-3-col div.col-2 div.content-container:nth-child(2) div.beach-preview a:nth-child(1) div.detail div.items:nth-child(4) &gt; div:nth-child(1)' contains text 'Wind'.</msg>
-<status status="PASS" starttime="20200810 13:47:11.774" endtime="20200810 13:47:11.998"></status>
+<msg timestamp="20200810 16:22:04.045" level="INFO">Element 'css:div.grid-3-col div.col-2 div.content-container:nth-child(2) div.beach-preview a:nth-child(1) div.detail div.items:nth-child(4) &gt; div:nth-child(1)' contains text 'Wind'.</msg>
+<status status="PASS" starttime="20200810 16:22:03.687" endtime="20200810 16:22:04.045"></status>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
@@ -432,22 +439,22 @@
 <arg>${FPTideForecast}</arg>
 <arg>Tide</arg>
 </arguments>
-<msg timestamp="20200810 13:47:12.042" level="INFO">Element 'css:div.grid-3-col div.col-2 div.content-container:nth-child(2) div.beach-preview a:nth-child(1) div.detail div.items:nth-child(4) &gt; div:nth-child(2)' contains text 'Tide'.</msg>
-<status status="PASS" starttime="20200810 13:47:11.998" endtime="20200810 13:47:12.042"></status>
+<msg timestamp="20200810 16:22:04.266" level="INFO">Element 'css:div.grid-3-col div.col-2 div.content-container:nth-child(2) div.beach-preview a:nth-child(1) div.detail div.items:nth-child(4) &gt; div:nth-child(2)' contains text 'Tide'.</msg>
+<status status="PASS" starttime="20200810 16:22:04.046" endtime="20200810 16:22:04.266"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:11.410" endtime="20200810 13:47:12.042"></status>
+<status status="PASS" starttime="20200810 16:22:03.007" endtime="20200810 16:22:04.266"></status>
 </kw>
 <kw name="Finish TestCase" library="KeywordsForecast" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200810 13:47:12.044" endtime="20200810 13:47:14.443"></status>
+<status status="PASS" starttime="20200810 16:22:04.268" endtime="20200810 16:22:06.939"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:12.043" endtime="20200810 13:47:14.443"></status>
+<status status="PASS" starttime="20200810 16:22:04.267" endtime="20200810 16:22:06.939"></status>
 </kw>
 <tags>
 <tag>Functional Tests - Forecast</tag>
 </tags>
-<status status="PASS" starttime="20200810 13:47:02.087" endtime="20200810 13:47:14.444" critical="yes"></status>
+<status status="PASS" starttime="20200810 16:21:50.658" endtime="20200810 16:22:06.940" critical="yes"></status>
 </test>
 <test id="s1-t5" name="TC5: There should not be a beach forecast for Sidmouth">
 <kw name="Start TestCase" library="Common" type="setup">
@@ -457,22 +464,22 @@
 <arg>https://www.metoffice.gov.uk/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200810 13:47:14.448" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
-<status status="PASS" starttime="20200810 13:47:14.447" endtime="20200810 13:47:19.763"></status>
+<msg timestamp="20200810 16:22:06.943" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
+<status status="PASS" starttime="20200810 16:22:06.943" endtime="20200810 16:22:13.682"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200810 13:47:19.764" endtime="20200810 13:47:21.959"></status>
+<status status="PASS" starttime="20200810 16:22:13.682" endtime="20200810 16:22:16.041"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${HPCookiesDisclaimerBtn}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:21.960" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20200810 13:47:21.959" endtime="20200810 13:47:22.251"></status>
+<msg timestamp="20200810 16:22:16.043" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20200810 16:22:16.042" endtime="20200810 16:22:16.647"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:14.447" endtime="20200810 13:47:22.251"></status>
+<status status="PASS" starttime="20200810 16:22:06.942" endtime="20200810 16:22:16.648"></status>
 </kw>
 <kw name="Select Search Text Box" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -480,10 +487,10 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:22.252" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:47:22.252" endtime="20200810 13:47:22.623"></status>
+<msg timestamp="20200810 16:22:16.651" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:22:16.651" endtime="20200810 16:22:17.145"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:22.252" endtime="20200810 13:47:22.624"></status>
+<status status="PASS" starttime="20200810 16:22:16.649" endtime="20200810 16:22:17.145"></status>
 </kw>
 <kw name="Enter Search Term" library="KeywordsForecast">
 <arguments>
@@ -494,7 +501,7 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<status status="PASS" starttime="20200810 13:47:22.627" endtime="20200810 13:47:22.644"></status>
+<status status="PASS" starttime="20200810 16:22:17.149" endtime="20200810 16:22:17.207"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -502,10 +509,10 @@
 <arg>${HPSearchTextBox}</arg>
 <arg>${searchterm}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:22.645" level="INFO">Typing text 'Sidmouth' into text field 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:47:22.644" endtime="20200810 13:47:22.746"></status>
+<msg timestamp="20200810 16:22:17.208" level="INFO">Typing text 'Sidmouth' into text field 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:22:17.207" endtime="20200810 16:22:17.632"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:22.625" endtime="20200810 13:47:22.746"></status>
+<status status="PASS" starttime="20200810 16:22:17.147" endtime="20200810 16:22:17.633"></status>
 </kw>
 <kw name="Click Search" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -513,10 +520,10 @@
 <arguments>
 <arg>${HPSearchButton}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:22.751" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
-<status status="PASS" starttime="20200810 13:47:22.751" endtime="20200810 13:47:24.168"></status>
+<msg timestamp="20200810 16:22:17.637" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
+<status status="PASS" starttime="20200810 16:22:17.636" endtime="20200810 16:22:19.579"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:22.750" endtime="20200810 13:47:24.168"></status>
+<status status="PASS" starttime="20200810 16:22:17.635" endtime="20200810 16:22:19.580"></status>
 </kw>
 <kw name="Check for NO beach forecast" library="KeywordsForecast">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -524,29 +531,29 @@
 <arguments>
 <arg>${FPRegionalForecast}</arg>
 </arguments>
-<status status="PASS" starttime="20200810 13:47:24.170" endtime="20200810 13:47:24.237"></status>
+<status status="PASS" starttime="20200810 16:22:19.581" endtime="20200810 16:22:19.721"></status>
 </kw>
 <kw name="Page Should Not Contain" library="SeleniumLibrary">
 <doc>Verifies the current page does not contain ``text``.</doc>
 <arguments>
 <arg>Beach forecast and tide times</arg>
 </arguments>
-<msg timestamp="20200810 13:47:29.369" level="INFO">Current page does not contain text 'Beach forecast and tide times'.</msg>
-<status status="PASS" starttime="20200810 13:47:24.237" endtime="20200810 13:47:29.369"></status>
+<msg timestamp="20200810 16:22:23.160" level="INFO">Current page does not contain text 'Beach forecast and tide times'.</msg>
+<status status="PASS" starttime="20200810 16:22:19.721" endtime="20200810 16:22:23.160"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:24.169" endtime="20200810 13:47:29.370"></status>
+<status status="PASS" starttime="20200810 16:22:19.580" endtime="20200810 16:22:23.160"></status>
 </kw>
 <kw name="Finish TestCase" library="KeywordsForecast" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200810 13:47:29.371" endtime="20200810 13:47:31.725"></status>
+<status status="PASS" starttime="20200810 16:22:23.165" endtime="20200810 16:22:25.951"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:29.370" endtime="20200810 13:47:31.725"></status>
+<status status="PASS" starttime="20200810 16:22:23.164" endtime="20200810 16:22:25.951"></status>
 </kw>
 <tags>
 <tag>Functional Tests - Forecast</tag>
 </tags>
-<status status="PASS" starttime="20200810 13:47:14.446" endtime="20200810 13:47:31.725" critical="yes"></status>
+<status status="PASS" starttime="20200810 16:22:06.941" endtime="20200810 16:22:25.952" critical="yes"></status>
 </test>
 <test id="s1-t6" name="TC6: GHERKIN - I can find the forecast for Jacobs Ladder beach in Sidmouth and be taken to the appropriate forecast page">
 <kw name="Start TestCase" library="Common" type="setup">
@@ -556,22 +563,22 @@
 <arg>https://www.metoffice.gov.uk/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200810 13:47:31.728" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
-<status status="PASS" starttime="20200810 13:47:31.728" endtime="20200810 13:47:37.021"></status>
+<msg timestamp="20200810 16:22:25.956" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
+<status status="PASS" starttime="20200810 16:22:25.955" endtime="20200810 16:22:32.970"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200810 13:47:37.022" endtime="20200810 13:47:39.224"></status>
+<status status="PASS" starttime="20200810 16:22:32.972" endtime="20200810 16:22:35.392"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${HPCookiesDisclaimerBtn}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:39.224" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20200810 13:47:39.224" endtime="20200810 13:47:39.553"></status>
+<msg timestamp="20200810 16:22:35.393" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20200810 16:22:35.392" endtime="20200810 16:22:36.006"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:31.728" endtime="20200810 13:47:39.553"></status>
+<status status="PASS" starttime="20200810 16:22:25.955" endtime="20200810 16:22:36.007"></status>
 </kw>
 <kw name="Given browser is opened to homepage" library="KeywordsForecast">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -579,17 +586,17 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<status status="PASS" starttime="20200810 13:47:39.554" endtime="20200810 13:47:39.569"></status>
+<status status="PASS" starttime="20200810 16:22:36.009" endtime="20200810 16:22:36.034"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:39.570" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:47:39.570" endtime="20200810 13:47:39.956"></status>
+<msg timestamp="20200810 16:22:36.035" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:22:36.035" endtime="20200810 16:22:36.484"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:39.554" endtime="20200810 13:47:39.956"></status>
+<status status="PASS" starttime="20200810 16:22:36.008" endtime="20200810 16:22:36.484"></status>
 </kw>
 <kw name="When user searches for the place named &quot;${placename}&quot;" library="KeywordsForecast">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -597,7 +604,7 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<status status="PASS" starttime="20200810 13:47:39.958" endtime="20200810 13:47:39.974"></status>
+<status status="PASS" starttime="20200810 16:22:36.492" endtime="20200810 16:22:36.535"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -605,49 +612,56 @@
 <arg>${HPSearchTextBox}</arg>
 <arg>${placename}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:39.975" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:47:39.975" endtime="20200810 13:47:40.198"></status>
+<msg timestamp="20200810 16:22:36.536" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:22:36.535" endtime="20200810 16:22:36.950"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${HPSearchButton}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:40.199" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
-<status status="PASS" starttime="20200810 13:47:40.198" endtime="20200810 13:47:41.359"></status>
+<msg timestamp="20200810 16:22:36.953" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
+<status status="PASS" starttime="20200810 16:22:36.951" endtime="20200810 16:22:38.968"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:39.957" endtime="20200810 13:47:41.359"></status>
+<status status="PASS" starttime="20200810 16:22:36.490" endtime="20200810 16:22:38.968"></status>
 </kw>
 <kw name="Then forecast page should be open" library="KeywordsForecast">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${FPRegionalForecast}</arg>
+</arguments>
+<status status="PASS" starttime="20200810 16:22:39.001" endtime="20200810 16:22:39.150"></status>
+</kw>
 <kw name="Location Should Contain" library="SeleniumLibrary">
 <doc>Verifies that the current URL contains ``expected``.</doc>
 <arguments>
 <arg>https://www.metoffice.gov.uk/weather/forecast/gcj8q101t</arg>
 </arguments>
-<msg timestamp="20200810 13:47:41.416" level="INFO">Current location contains 'https://www.metoffice.gov.uk/weather/forecast/gcj8q101t'.</msg>
-<status status="PASS" starttime="20200810 13:47:41.367" endtime="20200810 13:47:41.416"></status>
+<msg timestamp="20200810 16:22:39.268" level="INFO">Current location contains 'https://www.metoffice.gov.uk/weather/forecast/gcj8q101t'.</msg>
+<status status="PASS" starttime="20200810 16:22:39.150" endtime="20200810 16:22:39.268"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that the current page title equals ``title``.</doc>
 <arguments>
 <arg>Sidmouth - Jacobs Ladder (Beach) (Devon) weather - Met Office</arg>
 </arguments>
-<msg timestamp="20200810 13:47:41.470" level="INFO">Page title is 'Sidmouth - Jacobs Ladder (Beach) (Devon) weather - Met Office'.</msg>
-<status status="PASS" starttime="20200810 13:47:41.416" endtime="20200810 13:47:41.470"></status>
+<msg timestamp="20200810 16:22:39.425" level="INFO">Page title is 'Sidmouth - Jacobs Ladder (Beach) (Devon) weather - Met Office'.</msg>
+<status status="PASS" starttime="20200810 16:22:39.269" endtime="20200810 16:22:39.425"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:41.366" endtime="20200810 13:47:41.471"></status>
+<status status="PASS" starttime="20200810 16:22:39.000" endtime="20200810 16:22:39.426"></status>
 </kw>
 <kw name="Finish TestCase" library="KeywordsForecast" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200810 13:47:41.472" endtime="20200810 13:47:43.794"></status>
+<status status="PASS" starttime="20200810 16:22:39.428" endtime="20200810 16:22:42.204"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:41.472" endtime="20200810 13:47:43.794"></status>
+<status status="PASS" starttime="20200810 16:22:39.427" endtime="20200810 16:22:42.204"></status>
 </kw>
 <tags>
 <tag>Demo - Gherkin Syntax</tag>
 </tags>
-<status status="PASS" starttime="20200810 13:47:31.727" endtime="20200810 13:47:43.795" critical="yes"></status>
+<status status="PASS" starttime="20200810 16:22:25.954" endtime="20200810 16:22:42.205" critical="yes"></status>
 </test>
 <test id="s1-t7" name="TC7: THIS TEST CASE WILL FAIL - 7 days of forecasts should be shown on the forecast page">
 <kw name="Start TestCase" library="Common" type="setup">
@@ -657,22 +671,22 @@
 <arg>https://www.metoffice.gov.uk/</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200810 13:47:43.797" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
-<status status="PASS" starttime="20200810 13:47:43.797" endtime="20200810 13:47:49.124"></status>
+<msg timestamp="20200810 16:22:42.208" level="INFO">Opening browser 'chrome' to base url 'https://www.metoffice.gov.uk/'.</msg>
+<status status="PASS" starttime="20200810 16:22:42.208" endtime="20200810 16:22:48.864"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200810 13:47:49.124" endtime="20200810 13:47:51.306"></status>
+<status status="PASS" starttime="20200810 16:22:48.864" endtime="20200810 16:22:51.179"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>${HPCookiesDisclaimerBtn}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:51.307" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20200810 13:47:51.307" endtime="20200810 13:47:51.658"></status>
+<msg timestamp="20200810 16:22:51.181" level="INFO">Clicking button 'xpath://html/body/section/div/div/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20200810 16:22:51.180" endtime="20200810 16:22:51.717"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:43.797" endtime="20200810 13:47:51.659"></status>
+<status status="PASS" starttime="20200810 16:22:42.207" endtime="20200810 16:22:51.718"></status>
 </kw>
 <kw name="Select Search Text Box" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -680,10 +694,10 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:51.665" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:47:51.664" endtime="20200810 13:47:51.948"></status>
+<msg timestamp="20200810 16:22:51.723" level="INFO">Clicking element 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:22:51.721" endtime="20200810 16:22:52.101"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:51.663" endtime="20200810 13:47:51.949"></status>
+<status status="PASS" starttime="20200810 16:22:51.720" endtime="20200810 16:22:52.101"></status>
 </kw>
 <kw name="Enter Search Term" library="KeywordsForecast">
 <arguments>
@@ -694,7 +708,7 @@
 <arguments>
 <arg>${HPSearchTextBox}</arg>
 </arguments>
-<status status="PASS" starttime="20200810 13:47:51.950" endtime="20200810 13:47:51.966"></status>
+<status status="PASS" starttime="20200810 16:22:52.103" endtime="20200810 16:22:52.135"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -702,10 +716,10 @@
 <arg>${HPSearchTextBox}</arg>
 <arg>${searchterm}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:51.967" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
-<status status="PASS" starttime="20200810 13:47:51.966" endtime="20200810 13:47:52.117"></status>
+<msg timestamp="20200810 16:22:52.137" level="INFO">Typing text 'jacobs ladder' into text field 'xpath://input[@id='location-search-input']'.</msg>
+<status status="PASS" starttime="20200810 16:22:52.136" endtime="20200810 16:22:52.324"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:51.949" endtime="20200810 13:47:52.117"></status>
+<status status="PASS" starttime="20200810 16:22:52.102" endtime="20200810 16:22:52.324"></status>
 </kw>
 <kw name="Click Search" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -713,10 +727,10 @@
 <arguments>
 <arg>${HPSearchButton}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:52.127" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
-<status status="PASS" starttime="20200810 13:47:52.127" endtime="20200810 13:47:53.372"></status>
+<msg timestamp="20200810 16:22:52.327" level="INFO">Clicking element 'xpath://button[@id='location-search-submit']//span[@class='icon'][contains(text(),'Search')]'.</msg>
+<status status="PASS" starttime="20200810 16:22:52.326" endtime="20200810 16:22:55.901"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:52.126" endtime="20200810 13:47:53.373"></status>
+<status status="PASS" starttime="20200810 16:22:52.326" endtime="20200810 16:22:55.902"></status>
 </kw>
 <kw name="FAIL Validate 7 days of forecast" library="KeywordsForecast">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -724,71 +738,71 @@
 <arguments>
 <arg>${FPDay2}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:53.376" level="INFO">Clicking element 'xpath://li[@id='tabDay1']//a[1]'.</msg>
-<status status="PASS" starttime="20200810 13:47:53.375" endtime="20200810 13:47:53.884"></status>
+<msg timestamp="20200810 16:22:55.903" level="INFO">Clicking element 'xpath://li[@id='tabDay1']//a[1]'.</msg>
+<status status="PASS" starttime="20200810 16:22:55.903" endtime="20200810 16:22:56.607"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FPDay3}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:53.887" level="INFO">Clicking element 'xpath://li[@id='tabDay2']//a[1]'.</msg>
-<status status="PASS" starttime="20200810 13:47:53.884" endtime="20200810 13:47:55.100"></status>
+<msg timestamp="20200810 16:22:56.609" level="INFO">Clicking element 'xpath://li[@id='tabDay2']//a[1]'.</msg>
+<status status="PASS" starttime="20200810 16:22:56.608" endtime="20200810 16:22:57.118"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FPDay4}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:55.101" level="INFO">Clicking element 'xpath://li[@id='tabDay3']//a[1]'.</msg>
-<status status="PASS" starttime="20200810 13:47:55.100" endtime="20200810 13:47:55.916"></status>
+<msg timestamp="20200810 16:22:57.119" level="INFO">Clicking element 'xpath://li[@id='tabDay3']//a[1]'.</msg>
+<status status="PASS" starttime="20200810 16:22:57.118" endtime="20200810 16:22:57.420"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FPDay5}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:55.917" level="INFO">Clicking element 'xpath://li[@id='tabDay4']//a[1]'.</msg>
-<status status="PASS" starttime="20200810 13:47:55.916" endtime="20200810 13:47:56.519"></status>
+<msg timestamp="20200810 16:22:57.421" level="INFO">Clicking element 'xpath://li[@id='tabDay4']//a[1]'.</msg>
+<status status="PASS" starttime="20200810 16:22:57.421" endtime="20200810 16:22:59.040"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FPDay6}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:56.520" level="INFO">Clicking element 'xpath://li[@id='tabDay5']//a[1]'.</msg>
-<status status="PASS" starttime="20200810 13:47:56.519" endtime="20200810 13:47:56.935"></status>
+<msg timestamp="20200810 16:22:59.041" level="INFO">Clicking element 'xpath://li[@id='tabDay5']//a[1]'.</msg>
+<status status="PASS" starttime="20200810 16:22:59.040" endtime="20200810 16:22:59.280"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${FPDayFAIL}</arg>
 </arguments>
-<msg timestamp="20200810 13:47:56.936" level="INFO">Clicking element 'xpath://li[@id='tabDay7']//a[1]'.</msg>
+<msg timestamp="20200810 16:22:59.281" level="INFO">Clicking element 'xpath://li[@id='tabDay7']//a[1]'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200810 13:47:58.698" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-48.png"&gt;&lt;img src="selenium-screenshot-48.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200810 13:47:56.965" endtime="20200810 13:47:58.698"></status>
+<msg timestamp="20200810 16:23:01.173" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-54.png"&gt;&lt;img src="selenium-screenshot-54.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200810 16:22:59.335" endtime="20200810 16:23:01.173"></status>
 </kw>
-<msg timestamp="20200810 13:47:58.702" level="FAIL">Element with locator 'xpath://li[@id='tabDay7']//a[1]' not found.</msg>
-<status status="FAIL" starttime="20200810 13:47:56.935" endtime="20200810 13:47:58.702"></status>
+<msg timestamp="20200810 16:23:01.177" level="FAIL">Element with locator 'xpath://li[@id='tabDay7']//a[1]' not found.</msg>
+<status status="FAIL" starttime="20200810 16:22:59.281" endtime="20200810 16:23:01.177"></status>
 </kw>
-<status status="FAIL" starttime="20200810 13:47:53.375" endtime="20200810 13:47:58.703"></status>
+<status status="FAIL" starttime="20200810 16:22:55.902" endtime="20200810 16:23:01.177"></status>
 </kw>
 <kw name="Finish TestCase" library="KeywordsForecast" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20200810 13:47:58.704" endtime="20200810 13:48:01.249"></status>
+<status status="PASS" starttime="20200810 16:23:01.179" endtime="20200810 16:23:04.991"></status>
 </kw>
-<status status="PASS" starttime="20200810 13:47:58.704" endtime="20200810 13:48:01.249"></status>
+<status status="PASS" starttime="20200810 16:23:01.178" endtime="20200810 16:23:04.991"></status>
 </kw>
 <tags>
 <tag>Demo - Failed Test</tag>
 </tags>
-<status status="FAIL" starttime="20200810 13:47:43.796" endtime="20200810 13:48:01.251" critical="yes">Element with locator 'xpath://li[@id='tabDay7']//a[1]' not found.</status>
+<status status="FAIL" starttime="20200810 16:22:42.207" endtime="20200810 16:23:04.992" critical="yes">Element with locator 'xpath://li[@id='tabDay7']//a[1]' not found.</status>
 </test>
 <doc>Suite description</doc>
-<status status="FAIL" starttime="20200810 13:46:20.584" endtime="20200810 13:48:01.253"></status>
+<status status="FAIL" starttime="20200810 16:20:47.063" endtime="20200810 16:23:04.994"></status>
 </suite>
 <statistics>
 <total>

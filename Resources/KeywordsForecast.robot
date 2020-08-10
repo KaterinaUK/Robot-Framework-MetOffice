@@ -16,6 +16,7 @@ Click Search
     click element   ${HPSearchButton}
 
 Forecast Page Should Be Open
+    Wait Until Page Contains Element    ${FPRegionalForecast}
     Location Should Contain    https://www.metoffice.gov.uk/weather/forecast/gcj8q101t
     Title Should Be    Sidmouth - Jacobs Ladder (Beach) (Devon) weather - Met Office
 
